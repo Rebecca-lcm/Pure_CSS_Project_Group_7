@@ -1,0 +1,218 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+body {
+  
+  background: center no-repeat url(../images/Background.png);
+  background-size: cover;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+body:active .duck:active {
+ /* box-shadow:pink 0px 0px 0px 3000px;*/
+}
+
+h2 {
+  position: absolute;
+  font-family: sans-serif;
+  top: 0px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  padding: 5%;
+}
+
+.duck {
+  position: absolute;
+  left: -150px;
+  right: 0px;
+  height: 0px;
+  border-radius: 100%;
+  z-index: 10;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.duck a {
+  display: block;
+  cursor: crosshair;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  background: no-repeat center url(../images/bird.png);
+  background-size: cover;
+}
+.duck a:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.duck:nth-child(1) {
+  top: 52%;
+  -webkit-animation: fly 12s 1.4s linear infinite;
+          animation: fly 12s 1.4s linear infinite;
+}
+.duck:nth-child(1) a {
+  width: 149px;
+  -webkit-animation: float 2.3s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.3s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(2) {
+  top: 11%;
+  -webkit-animation: fly 8s 13.2s linear infinite;
+          animation: fly 8s 13.2s linear infinite;
+}
+.duck:nth-child(2) a {
+  width: 89px;
+  -webkit-animation: float 1.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 1.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(3) {
+  top: 53%;
+  -webkit-animation: fly 16s 11.9s linear infinite;
+          animation: fly 16s 11.9s linear infinite;
+}
+.duck:nth-child(3) a {
+  width: 89px;
+  -webkit-animation: float 2.4s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.4s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(4) {
+  top: 2%;
+  -webkit-animation: fly 8s 14.9s linear infinite;
+          animation: fly 8s 14.9s linear infinite;
+}
+.duck:nth-child(4) a {
+  width: 111px;
+  -webkit-animation: float 2.9s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.9s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(5) {
+  top: 56%;
+  -webkit-animation: fly 9s 5.8s linear infinite;
+          animation: fly 9s 5.8s linear infinite;
+}
+.duck:nth-child(5) a {
+  width: 65px;
+  -webkit-animation: float 1.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 1.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(6) {
+  top: 25%;
+  -webkit-animation: fly 13s 3.7s linear infinite;
+          animation: fly 13s 3.7s linear infinite;
+}
+.duck:nth-child(6) a {
+  width: 109px;
+  -webkit-animation: float 2.1s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.1s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(7) {
+  top: 55%;
+  -webkit-animation: fly 7s 3.1s linear infinite;
+          animation: fly 7s 3.1s linear infinite;
+}
+.duck:nth-child(7) a {
+  width: 131px;
+  -webkit-animation: float 2.6s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.6s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(8) {
+  top: 8%;
+  -webkit-animation: fly 11s 7s linear infinite;
+          animation: fly 11s 7s linear infinite;
+}
+.duck:nth-child(8) a {
+  width: 90px;
+  -webkit-animation: float 2.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2.7s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(9) {
+  top: 33%;
+  -webkit-animation: fly 11s 4.8s linear infinite;
+          animation: fly 11s 4.8s linear infinite;
+}
+.duck:nth-child(9) a {
+  width: 127px;
+  -webkit-animation: float 3.4s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 3.4s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+.duck:nth-child(10) {
+  top: 45%;
+  -webkit-animation: fly 12s 12.5s linear infinite;
+          animation: fly 12s 12.5s linear infinite;
+}
+.duck:nth-child(10) a {
+  width: 75px;
+  -webkit-animation: float 2s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+          animation: float 2s infinite cubic-bezier(0.58, 0.14, 0.46, 0.92);
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  50% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  100% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  50% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  100% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+}
+.duck:target {
+  -webkit-animation: none;
+          animation: none;
+}
